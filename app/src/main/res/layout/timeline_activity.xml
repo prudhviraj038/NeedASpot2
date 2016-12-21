@@ -7,7 +7,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="20dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -17,14 +18,15 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                app:srcCompat="@drawable/user"
                 android:id="@+id/imageView6"
-                android:adjustViewBounds="true" />
+                android:adjustViewBounds="true"
+                android:src="@drawable/user" />
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -37,9 +39,9 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView6"
                         android:layout_weight="1"
-                        android:layout_marginTop="10dp"
                         android:paddingLeft="5dp"
-                        android:paddingRight="5dp" />
+                        android:paddingRight="5dp"
+                        android:layout_marginTop="10dp" />
 
                     <TextView
                         android:text="10m"

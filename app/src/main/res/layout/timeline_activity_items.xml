@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:id="@+id/textView4"
             android:gravity="center_vertical|center_horizontal"
-            android:textColor="#3c619a"
+            android:textColor="#203259"
             android:textSize="24sp"
             android:textStyle="normal|bold"
             android:layout_marginTop="5dp" />
@@ -25,13 +25,16 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:background="#3c619a"
-        android:layout_marginTop="40dp"
-        android:layout_height="1dp"></LinearLayout>
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"></LinearLayout>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"
-        android:id="@+id/list_items" />
+        android:id="@+id/list_items"
+        android:padding="20dp" />
 
 </LinearLayout>
