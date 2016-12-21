@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:text="Trainers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView27"
+                android:textSize="20sp"
+                android:textColor="#3c619a"
+                android:textStyle="normal|bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_corners">
+
+                <TextView
+                    android:text="Search..."
+                    android:id="@+id/textView28"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:textColor="#3c619a" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/imageView13"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/cross_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/trainer_items"
+            android:padding="20dp" />
+    </LinearLayout>
+</LinearLayout>
