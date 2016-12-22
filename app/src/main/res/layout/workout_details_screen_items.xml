@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView59"
+                android:elevation="0dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="17sp"
+                android:textColor="#3c619b" />
+
+            <TextView
+                android:text="Workout Details"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView60"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#1f3159"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView61"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Basketball Game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView62"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#3c619b"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:text="Activity Workout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView63"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#3c619b"
+            android:textSize="17sp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:text="UCF Campus at 4:00 PM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView64"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="17sp"
+            android:textColor="#3c619b" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#1f3159"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView65"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:text="Members"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView66"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:text=" View All"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView67"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginRight="15dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/arrow_icon"
+                android:id="@+id/imageView29"
+                android:padding="7dp"
+                android:tint="#ffffff"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:id="@+id/members_list"
+        android:numColumns="4"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#3c619b"
+        android:layout_marginBottom="10dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView68"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="18sp"
+            android:textColor="#3c619b"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:text="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView69"
+                android:textSize="15sp"
+                android:textColor="#3c619b" />
+
+            <TextView
+                android:text="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView70"
+                android:layout_marginTop="10dp"
+                android:textColor="#3c619b"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#3c619b"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"></LinearLayout>
+
+</LinearLayout>
