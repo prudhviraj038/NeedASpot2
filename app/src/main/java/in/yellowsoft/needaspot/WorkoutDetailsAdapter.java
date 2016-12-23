@@ -22,7 +22,7 @@ public class WorkoutDetailsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 10;
+        return 4;
     }
 
     @Override

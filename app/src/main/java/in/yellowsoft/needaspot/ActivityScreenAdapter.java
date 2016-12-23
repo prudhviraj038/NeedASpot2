@@ -15,7 +15,7 @@ public class ActivityScreenAdapter extends BaseAdapter {
     Context context;
 
     protected ActivityScreenAdapter(Context context){
-        context = this.context;
+        this.context = context;
         inflater = LayoutInflater.from(context);
     }
     @Override

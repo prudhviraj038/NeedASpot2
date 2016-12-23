@@ -35,7 +35,7 @@ public class TrainersAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        final View item_view = inflater.inflate(R.layout.timeline_activity_items,null);
+        final View item_view = inflater.inflate(R.layout.trainer_screen_items,null);
         return item_view;
     }
 }
