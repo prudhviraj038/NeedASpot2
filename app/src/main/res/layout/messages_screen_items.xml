@@ -22,7 +22,8 @@
                 android:id="@+id/textView51"
                 android:gravity="center_vertical|center_horizontal"
                 android:textSize="18sp"
-                android:textColor="#3c619b" />
+                android:textColor="#3c619b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:text="Messages"
@@ -45,5 +46,6 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/message_list" />
+        android:id="@+id/message_list"
+        android:divider="@null"/>
 </LinearLayout>

@@ -38,7 +38,8 @@
                     android:id="@+id/textView21"
                     android:gravity="center_vertical"
                     android:textColor="#3c619a"
-                    android:textSize="17sp" />
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
 
                 <TextView
                     android:text="Orlando"
@@ -46,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/textView31"
                     android:textColor="#3c619a"
-                    android:textSize="17sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

@@ -23,6 +23,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:textColor="#3c619b"
-            android:textSize="17sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>

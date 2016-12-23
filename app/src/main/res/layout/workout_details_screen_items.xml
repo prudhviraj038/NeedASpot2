@@ -123,8 +123,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/textView67"
                 android:textColor="#ffffff"
-                android:gravity="center_vertical|center_horizontal"
-                android:layout_marginRight="15dp" />
+                android:gravity="center_vertical|center_horizontal" />
 
             <ImageView
                 android:layout_width="25dp"
@@ -139,10 +138,9 @@
 
     <GridView
         android:layout_width="match_parent"
-        android:layout_height="67dp"
         android:id="@+id/members_list"
         android:numColumns="4"
-        android:layout_marginBottom="20dp" />
+        android:layout_height="130dp" />
 
     <LinearLayout
         android:orientation="horizontal"
