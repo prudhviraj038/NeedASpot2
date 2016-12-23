@@ -32,7 +32,7 @@
                 android:id="@+id/textView36"
                 android:layout_weight="1"
                 android:gravity="center_vertical|center_horizontal"
-                android:textColor="#3c619a"
+                android:textColor="#1f3159"
                 android:textStyle="normal|bold"
                 android:textSize="20sp" />
 

@@ -87,10 +87,10 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="match_parent"
-                            app:srcCompat="@drawable/ic_plus"
                             android:id="@+id/imageView32"
                             android:layout_marginRight="10dp"
-                            android:padding="5dp" />
+                            android:padding="5dp"
+                            android:src="@drawable/ic_plus" />
 
                         <TextView
                             android:text="Send"

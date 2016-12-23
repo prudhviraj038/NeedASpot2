@@ -31,7 +31,7 @@
                 android:id="@+id/textView35"
                 android:layout_weight="1"
                 android:gravity="center_vertical|center_horizontal"
-                android:textColor="#3c619a"
+                android:textColor="#1f3159"
                 android:textSize="19sp"
                 android:textStyle="normal|bold" />
 
@@ -173,11 +173,11 @@
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            app:srcCompat="@drawable/arrow_icon"
                             android:id="@+id/imageView20"
                             android:adjustViewBounds="true"
                             android:padding="5dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/arrow_icon" />
                     </LinearLayout>
 
                     <LinearLayout

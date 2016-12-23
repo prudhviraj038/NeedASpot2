@@ -32,7 +32,7 @@
                 android:id="@+id/textView49"
                 android:layout_weight="1"
                 android:gravity="center_vertical|center_horizontal"
-                android:textColor="#3c619b"
+                android:textColor="#1f3159"
                 android:textSize="20sp"
                 android:textStyle="normal|bold" />
 
@@ -80,10 +80,10 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/arrow_icon"
                         android:id="@+id/imageView23"
                         android:adjustViewBounds="true"
-                        android:padding="5dp" />
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_icon" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -115,9 +115,9 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/arrow_icon"
                         android:id="@+id/imageView25"
-                        android:padding="5dp" />
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_icon" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -147,9 +147,10 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/arrow_icon"
                         android:id="@+id/imageView26"
-                        android:padding="5dp" />
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_icon"
+                        android:adjustViewBounds="false" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -179,9 +180,9 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/arrow_icon"
                         android:id="@+id/imageView27"
-                        android:padding="5dp" />
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_icon" />
                 </LinearLayout>
 
                 <LinearLayout

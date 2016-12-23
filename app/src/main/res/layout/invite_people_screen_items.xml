@@ -31,7 +31,7 @@
                 android:id="@+id/textView43"
                 android:layout_weight="1"
                 android:gravity="center_vertical|center_horizontal"
-                android:textColor="#3c619b"
+                android:textColor="#1f3159"
                 android:textSize="20sp"
                 android:textStyle="normal|bold" />
 
