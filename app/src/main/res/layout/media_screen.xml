@@ -16,10 +16,11 @@
             android:src="@drawable/user" />
 
         <TextView
-            android:text="TextView"
+            android:text="Workout 1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/textView87"
-            android:gravity="center_vertical|center_horizontal" />
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#3c619b" />
     </LinearLayout>
 </LinearLayout>

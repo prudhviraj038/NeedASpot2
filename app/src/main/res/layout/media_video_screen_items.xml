@@ -26,7 +26,7 @@
                 android:textColor="#3c619b" />
 
             <TextView
-                android:text="TextView"
+                android:text="Media"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/textView91"
