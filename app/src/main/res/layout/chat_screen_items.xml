@@ -100,7 +100,7 @@
                                 android:layout_width="25dp"
                                 android:layout_height="match_parent"
                                 android:id="@+id/imageView46"
-                                app:srcCompat="@drawable/ic_plus" />
+                                android:src="@drawable/ic_plus" />
                         </LinearLayout>
 
                     </LinearLayout>
