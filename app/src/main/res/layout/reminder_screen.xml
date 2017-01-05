@@ -18,6 +18,12 @@
             android:layout_height="40dp"
             android:layout_marginTop="5dp">
 
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView22"
+                android:adjustViewBounds="true" />
+
             <TextView
                 android:text="Profile"
                 android:layout_width="wrap_content"
@@ -30,12 +36,12 @@
                 android:layout_weight="1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/settings"
                 android:adjustViewBounds="true"
-                android:padding="5dp"
-                android:src="@drawable/settings_icon" />
+                android:src="@drawable/settings_icon"
+                android:layout_marginRight="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,7 +62,7 @@
             <TextView
                 android:text="Grant Gustin"
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
+                android:layout_height="30dp"
                 android:id="@+id/textView10"
                 android:gravity="center_vertical|center_horizontal"
                 android:textColor="#3c619a"
@@ -80,8 +86,8 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:id="@+id/imageView8"
                     android:adjustViewBounds="false"
                     android:src="@drawable/pinpoint" />
@@ -94,7 +100,7 @@
                     android:textColor="#3c619a"
                     android:textSize="17sp"
                     android:textAllCaps="false"
-                    android:text="New York,NY" />
+                    android:text="New York, NY" />
             </LinearLayout>
 
             <LinearLayout
@@ -112,8 +118,8 @@
                 android:layout_gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:id="@+id/imageView9"
                     android:adjustViewBounds="false"
                     android:src="@drawable/follow" />
@@ -135,8 +141,8 @@
                     android:layout_marginLeft="30dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:id="@+id/imageView10"
                         android:layout_weight="1"
                         android:src="@drawable/message" />

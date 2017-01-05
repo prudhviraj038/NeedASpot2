@@ -10,26 +10,28 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 /**
- * Created by T on 24-12-2016.
+ * Created by T on 22-12-2016.
  */
 
-public class WorkoutsPage extends Fragment {
+public class TrainersFragment extends Fragment {
     ListView listView;
-    WorkoutsPageAdapter workoutsPageAdapter;
+    TrainersAdapter trainersAdapter;
    public View onCreateView(final LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
-        final View view = inflater.inflate(R.layout.workouts_page_items,container,false);
-        listView = (ListView) view.findViewById(R.id.workouts);
-        workoutsPageAdapter = new WorkoutsPageAdapter(getActivity());
-        listView.setAdapter(workoutsPageAdapter);
+       final View view = inflater.inflate(R.layout.trainers_screen,container,false);
+        listView = (ListView) view.findViewById(R.id.trainer_items);
+        trainersAdapter = new TrainersAdapter(getActivity());
+        listView.setAdapter(trainersAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                WorkoutDetailsScreen workoutDetailsScreen = new WorkoutDetailsScreen();
-                getFragmentManager().beginTransaction().replace(R.id.need_a_spot_fragment,workoutDetailsScreen).commit();
+                ActivityScreen activityScreen = new ActivityScreen();
+                getFragmentManager().beginTransaction().replace(R.id.need_a_spot_fragment,activityScreen).commit();
             }
         });
 
        return view;
 
+
     }
+
 }

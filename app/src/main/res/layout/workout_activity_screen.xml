@@ -158,7 +158,8 @@
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/invite_people">
 
                         <TextView
                             android:text="Invite People"
@@ -195,7 +196,8 @@
                     android:background="@drawable/blue_full_rounded_corners"
                     android:gravity="center"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/done_btn">
 
                     <TextView
                         android:layout_width="match_parent"

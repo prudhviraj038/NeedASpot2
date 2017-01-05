@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/splash_image"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_bg"
+            android:id="@+id/imageView50"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/welcome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="150dp">
+
+            <TextView
+                android:text="Welcome!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView115"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:text="Sed cursus ante dapibus diam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView118"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:text="consectetur adipiscing elit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView124"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:text="Lorem ipsum dolor sit amet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView125"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:text="Duis sagittis ipsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView126"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/slide"
+                    android:id="@+id/imageView51"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Get Started"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/started_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/white_low_rounded_corners"
+                android:textColor="#909ba0" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -13,17 +13,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" android:label="@string/app_name" ></activity>
-        <activity android:name=".ActivityScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".ChattingScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".InvitePeople" android:label="@string/app_name" ></activity>
-        <activity android:name=".ProfileActivity" android:label="@string/app_name" ></activity>
+        <activity android:name=".LoginActivity" android:label="@string/app_name"></activity>
+        <!--<activity android:name=".ActivityScreen" android:label="@string/app_name"></activity>-->
+        <activity android:name=".ChattingScreen" android:label="@string/app_name"></activity>
+        <!--<activity android:name=".InvitePeople" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".ProfileActivity" android:label="@string/app_name" ></activity>-->
         <activity android:name=".MessageScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".SettingsScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".TrainersActivity" android:label="@string/app_name" ></activity>
-        <activity android:name=".WorkoutDetailsScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".WorkoutScreen" android:label="@string/app_name" ></activity>
-        <activity android:name=".ProfileScheduleScreen" android:label="@string/app_name" ></activity>
+        <!--<activity android:name=".SettingsScreen" android:label="@string/app_name"></activity>-->
+        <!--<activity android:name=".TrainersFragment" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".WorkoutDetailsScreen" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".WorkoutScreen" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".ProfileScheduleScreen" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".MediaScreen" android:label="@string/app_name" ></activity>-->
+        <!--<activity android:name=".MediaVideoScreen" android:label="@string/app_name"></activity>-->
+        <!--<activity android:name=".WorkoutsPage" android:label="@string/app_name"></activity>-->
+        <!--<activity android:name=".MainActivityScreen" android:label="@string/app_name"></activity>-->
+        <activity android:name=".ScheduleScreen" android:label="@string/app_name"></activity>
+        <activity android:name=".MainFragment" android:label="@string/app_name"></activity>
+
     </application>
 
 </manifest>

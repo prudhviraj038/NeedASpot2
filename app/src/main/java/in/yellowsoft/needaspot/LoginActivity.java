@@ -70,7 +70,7 @@ public class LoginActivity extends Activity {
                     popup("Please enter password");
                 else {
                     Toast.makeText(LoginActivity.this, "Successfully login", Toast.LENGTH_SHORT).show();
-                    Intent mainIntent = new Intent(getApplicationContext(),ProfileActivity.class);
+                    Intent mainIntent = new Intent(getApplicationContext(),MainFragment.class);
                     startActivity(mainIntent);
                 }
             }

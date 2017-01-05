@@ -5,10 +5,20 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#203259"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></LinearLayout>
+
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -39,9 +49,11 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView6"
                         android:layout_weight="1"
-                        android:paddingLeft="5dp"
+                        android:paddingLeft="10dp"
                         android:paddingRight="5dp"
-                        android:layout_marginTop="10dp" />
+                        android:layout_marginTop="10dp"
+                        android:textColor="#203259"
+                        android:textStyle="normal|bold" />
 
                     <TextView
                         android:text="10m"
@@ -49,7 +61,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/textView7"
                         android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp" />
+                        android:layout_marginRight="10dp"
+                        android:textColor="#203259" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -58,11 +71,14 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:text="Sed Convallis"
+                        android:text="Sed Convallis Sed Convallis Sed Convallis Sed Convallis Sed Convallis Sed Convallis Sed Convallis"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/textView8"
-                        android:paddingLeft="5dp" />
+                        android:paddingLeft="10dp"
+                        android:textColor="#203259"
+                        android:lines="2"
+                        android:paddingRight="10dp" />
                 </LinearLayout>
             </LinearLayout>
 
