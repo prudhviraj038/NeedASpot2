@@ -1,5 +1,6 @@
 package in.yellowsoft.needaspot;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -24,6 +25,9 @@ public class MainFragment extends FragmentActivity {
        add       = (LinearLayout) findViewById(R.id.add);
        activity  = (LinearLayout) findViewById(R.id.activity);
        workouts  = (LinearLayout) findViewById(R.id.workouts);
+
+       ProfileActivity profileActivity = new ProfileActivity();
+       getSupportFragmentManager().beginTransaction().replace(R.id.need_a_spot_fragment,profileActivity).commit();
 
        profile.setOnClickListener(new View.OnClickListener() {
            @Override

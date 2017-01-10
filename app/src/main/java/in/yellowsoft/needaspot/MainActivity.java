@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
-        ImageView imageView=(ImageView)findViewById(R.id.splash);
+        ImageView splash=(ImageView)findViewById(R.id.splash);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

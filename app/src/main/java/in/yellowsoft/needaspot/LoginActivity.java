@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
 
 
 public class LoginActivity extends Activity {
@@ -64,29 +70,70 @@ public class LoginActivity extends Activity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (l_email.getText().toString().equals(""))
+                String email = l_email.getText().toString();
+                String password = l_password.getText().toString();
+
+                if (email.equals(""))
                     popup("Please enter email id");
-                else if (l_password.getText().toString().equals(""))
+                else if (password.equals(""))
                     popup("Please enter password");
                 else {
-                    Toast.makeText(LoginActivity.this, "Successfully login", Toast.LENGTH_SHORT).show();
-                    Intent mainIntent = new Intent(getApplicationContext(),MainFragment.class);
-                    startActivity(mainIntent);
+                    Ion.with(LoginActivity.this)
+                            .load("http://www.disruptivetechsolutions.com/NeedASpot/api/Account/ValidateUser")
+                            .setBodyParameter("EmailAddress",email)
+                            .setBodyParameter("Password",password)
+                            .asJsonObject()
+                            .setCallback(new FutureCallback<JsonObject>() {
+                                @Override
+                                public void onCompleted(Exception e, JsonObject result) {
+                                    Log.e("response",result.toString());
+                                    if (result.get("Status").getAsString().equals("Success")){
+                                        Toast.makeText(LoginActivity.this,result.get("Message").getAsString(), Toast.LENGTH_SHORT).show();
+                                        Intent mainIntent = new Intent(getApplicationContext(),MainFragment.class);
+                                        startActivity(mainIntent);
+                                    }else {
+                                        Toast.makeText(LoginActivity.this,result.get("Message").getAsString(),Toast.LENGTH_SHORT).show();
+                                    }
+
+                                }
+                            });
+
                 }
             }
         });
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (r_email.getText().toString().equals(""))
+                String email = r_email.getText().toString();
+                String password = r_password.getText().toString();
+                if (email.equals(""))
                     popup("Please enter email id");
-                else if (r_password.getText().toString().equals(""))
+                else if (password.equals(""))
                     popup("Please enter password");
                 else if (r_v_password.getText().toString().equals(""))
                     popup("Please enter verify password");
                 else {
-                    Toast.makeText(LoginActivity.this, "Successfully signup", Toast.LENGTH_SHORT).show();
-                    viewFlipper.setDisplayedChild(0);
+                    Ion.with(LoginActivity.this)
+                            .load("http://www.disruptivetechsolutions.com/NeedASpot/api/Account/AddNewUser")
+                            .setBodyParameter("EmailAddress",email)
+                            .setBodyParameter("Password",password)
+                            .setBodyParameter("UserType","1")
+                            .asJsonObject()
+                            .setCallback(new FutureCallback<JsonObject>() {
+                                @Override
+                                public void onCompleted(Exception e, JsonObject result) {
+                                    Log.e("response",result.toString());
+                                    if (result.get("Status").getAsString().equals("Success")){
+                                        Toast.makeText(LoginActivity.this,result.get("Message").getAsString(), Toast.LENGTH_SHORT).show();
+                                        viewFlipper.setDisplayedChild(0);
+                                    }else {
+                                        Toast.makeText(LoginActivity.this,result.get("Message").getAsString(),Toast.LENGTH_SHORT).show();
+                                    }
+
+                                }
+                            });
+
+
                 }
             }
         });
