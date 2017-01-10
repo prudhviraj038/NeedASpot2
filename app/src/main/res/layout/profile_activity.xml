@@ -76,6 +76,69 @@
                             android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/blue_rounded_corners">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_city"
+                                android:background="#00000000"
+                                android:hint="City"
+                                android:textColor="#3c619a"
+                                android:textColorHint="#3c619a"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blue_rounded_corners" >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_state"
+                                android:background="#00000000"
+                                android:hint="State"
+                                android:textColor="#3c619a"
+                                android:textColorHint="#3c619a"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blue_rounded_corners" >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_country"
+                                android:background="#00000000"
+                                android:hint="Country"
+                                android:textColor="#3c619a"
+                                android:textColorHint="#3c619a"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:background="@drawable/blue_rounded_corners" >
 
                             <EditText
@@ -217,6 +280,29 @@
                                 android:id="@+id/et_bio"
                                 android:background="#00000000"
                                 android:hint="Biography"
+                                android:textColor="#3c619a"
+                                android:textColorHint="#3c619a"
+                                android:textSize="15sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:minLines="5"
+                                android:gravity="top" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blue_rounded_corners" >
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_certification"
+                                android:background="#00000000"
+                                android:hint="Certification"
                                 android:textColor="#3c619a"
                                 android:textColorHint="#3c619a"
                                 android:textSize="15sp"
