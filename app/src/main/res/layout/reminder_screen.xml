@@ -60,24 +60,41 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:src="@drawable/user" />
 
-            <TextView
+            <EditText
                 android:text="Grant Gustin"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:id="@+id/name"
                 android:gravity="center_vertical|center_horizontal"
                 android:textColor="#3c619a"
                 android:textSize="24sp" />
 
-            <TextView
-                android:text="Male, 26Y"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:layout_marginTop="5dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:textColor="#3c619a"
-                android:textSize="18sp"
-                android:id="@+id/gender" />
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:text="Male, "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right|center_vertical|center_horizontal"
+                    android:textColor="#3c619a"
+                    android:textSize="18sp"
+                    android:id="@+id/gender"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="26Y"
+                    android:id="@+id/age"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#3c619a" />
+            </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -93,7 +110,7 @@
                     android:adjustViewBounds="false"
                     android:src="@drawable/pinpoint" />
 
-                <TextView
+                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal"
@@ -169,17 +186,16 @@
                 android:layout_marginTop="15dp">
 
                 <TextView
-                    android:text="Goals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3c619a"
+                    android:textSize="20sp"
+                    android:text="Goals" />
+
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/goals"
-                    android:textColor="#3c619a"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/textView18"
                     android:layout_marginTop="10dp"
                     android:textColor="#3c619a"
                     android:text="Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor."
@@ -196,15 +212,14 @@
                     android:text="Biography"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/biography"
                     android:textColor="#3c619a"
                     android:textSize="20sp" />
 
-                <TextView
+                <EditText
                     android:text="Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView20"
+                    android:id="@+id/biography"
                     android:layout_marginTop="10dp"
                     android:textColor="#3c619a"
                     android:textSize="18sp" />
