@@ -78,7 +78,7 @@ public class ProfileActivity extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fname   = f_name.getText().toString();
+                final String fname   = f_name.getText().toString();
                 String zipcode = zip.getText().toString();
                 String Age     = age.getText().toString();
                 String Goals   = goals.getText().toString();
@@ -131,6 +131,7 @@ public class ProfileActivity extends Fragment {
                                         Toast.makeText(getActivity(), result.get("Message").getAsString(), Toast.LENGTH_SHORT).show();
                                         ReminderScreen reminderScreen = new ReminderScreen();
                                         Bundle bundle = new Bundle();
+                                        bundle.putString("fullname",fname);
                                         bundle.putString("gender",result.get("Gender").getAsString());
                                         bundle.putString("age",result.get("DateofBirth").getAsString());
                                         bundle.putString("city",result.get("City").getAsString());

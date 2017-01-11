@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,8 +15,7 @@ import android.widget.TextView;
 
 public class ReminderScreen extends Fragment {
     ImageView settings;
-    TextView name,gender,city,goals,biography;
-    String user_name;
+    EditText name,gender,age,city,goals,biography;
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         final View view = inflater.inflate(R.layout.reminder_screen,container,false);
@@ -28,14 +28,16 @@ public class ReminderScreen extends Fragment {
             }
         });
 
-        name = (TextView) view.findViewById(R.id.name);
-        gender = (TextView) view.findViewById(R.id.gender);
-        city   = (TextView) view.findViewById(R.id.city);
-        goals  = (TextView) view.findViewById(R.id.goals);
-        biography = (TextView) view.findViewById(R.id.biography);
+        name = (EditText) view.findViewById(R.id.name);
+        gender = (EditText) view.findViewById(R.id.gender);
+        city   = (EditText) view.findViewById(R.id.city);
+        goals  = (EditText) view.findViewById(R.id.goals);
+        biography = (EditText) view.findViewById(R.id.biography);
+        age     = (EditText) view.findViewById(R.id.age);
 
         Bundle bundle=getArguments();
-        gender.setText(String.valueOf(bundle.getString("gender")));
+        name.setText(String.valueOf(bundle.getString("fullname")));
+        gender.setText(String.valueOf(bundle.getString("gender")+"  "+String.valueOf(bundle.getString("age"))));
         city.setText(String.valueOf(bundle.getString("city")));
         goals.setText(String.valueOf(bundle.getString("goals")));
         biography.setText(String.valueOf(bundle.getString("biography")));
